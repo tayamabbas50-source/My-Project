@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #010b1a, #004777);
+}
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.side-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 260px;
+    height: 260px;
+    background: url("achievement.jpg") center/cover;
+    border-radius: 130px 0 0 130px;
+}
+
+.content {
+    width: 65%;
+    max-width: 850px;
+    padding: 30px 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(231,133,5,0.9);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.nav-bar a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 7px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+
+.green{ background: linear-gradient(45deg, #03880a, #1d5702); }
+.blue{ background: linear-gradient(45deg, #03ac99, #014751); }
+.pink{background:linear-gradient(45deg,#c50973,#8a0b53) ;}
+
+.nav-bar a:hover {
+    background: linear-gradient(45deg, black, #444);
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    background: rgba(230,135,12,0.87);
+    border-radius: 15px;
+}
+
+td {
+    padding: 15px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+caption {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+    background: rgba(200,200,200,0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
