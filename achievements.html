@@ -1,49 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>إنجازاتي</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنجازاتي | تيام الزعبي</title>
     <link rel="stylesheet" href="achievements.css">
 </head>
+
 <body>
 
 <div class="layout">
 
-    <div class="side-image"></div>
+    <aside class="side-image"></aside>
 
-    <div class="content">
+    <main class="content hidden">
 
-        <h1>🏆 <b> إنجازاتي</b></h1>
+        <h1 class="title">🏆 إنجازاتي</h1>
 
-        <div class="nav-bar">
+        <nav class="nav-bar">
             <a href="index.html" class="nav-btn green">🏠 الرئيسية</a>
             <a href="friends.html" class="nav-btn blue">👥 أصدقائي</a>
-            <a href="School.html" class="nav-btn pink">🏫 مدرستي</a>
-        </div>
+            <a href="school.html" class="nav-btn pink">🏫 مدرستي</a>
+        </nav>
 
-        <table>
-            <caption>📋 أبرز إنجازاتي</caption>
+        <section class="achievements">
 
-            <tr>
-                <td>
-                    🎯 الفوز بالمركز الأول على مستوى إقليم الشمال بمسابقة الإبداع باللغة الإنجليزية
-                    <a href="https://web.facebook.com/share/p/17YDKS8cT9/" target="_blank"><b>🔗 إثبات</b></a>
-                </td>
-            </tr>
+            <div class="card">
+                <h3>🎯 المركز الأول - إقليم الشمال</h3>
+                <p>
+                    الفوز بالمركز الأول على مستوى إقليم الشمال
+                    بمسابقة الإبداع باللغة الإنجليزية
+                </p>
+                <a href="https://web.facebook.com/share/p/17YDKS8cT9/"
+                   target="_blank" class="proof-btn">
+                   🔗 عرض الإثبات
+                </a>
+            </div>
 
-            <tr>
-                <td>
-                    🏅 الفوز بمسابقة القرآن الكريم على مستوى المدرسة
-                    <a href="https://web.facebook.com/share/p/1HGmWFtoLf/" target="_blank"><b>🔗 إثبات</b></a>
-                </td>
-            </tr>
+            <div class="card">
+                <h3>🏅 مسابقة القرآن الكريم</h3>
+                <p>
+                    الفوز بمسابقة القرآن الكريم
+                    على مستوى المدرسة
+                </p>
+                <a href="https://web.facebook.com/share/p/1HGmWFtoLf/"
+                   target="_blank" class="proof-btn">
+                   🔗 عرض الإثبات
+                </a>
+            </div>
 
-        </table>
+        </section>
 
         <footer>
-            <small>© 2025 تيام الزعبي</small>
+            <small>© <span id="year"></span> جميع الحقوق محفوظة</small>
         </footer>
 
-    </div>
-
+    </main>
 </div>
+
+<script src="achievements.js"></script>
 </body>
 </html>
