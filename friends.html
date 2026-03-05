@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>أصدقائي</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أصدقائي | تيام الزعبي</title>
     <link rel="stylesheet" href="friends.css">
 </head>
 
@@ -8,32 +11,35 @@
 
 <div class="layout">
 
-    <div class="right-img"></div>
-    <div class="left-img"></div>
+    <div class="side-img right"></div>
+    <div class="side-img left"></div>
 
-    <div class="content">
+    <main class="content hidden">
 
-        <h1>👥 أصدقائي</h1>
+        <h1 class="title">👥 أصدقائي</h1>
 
-        <div class="nav-bar">
+        <nav class="nav-bar">
             <a href="index.html" class="nav-btn green">🏠 الرئيسية</a>
             <a href="achievements.html" class="nav-btn blue">🏆 إنجازاتي</a>
-            <a href="School.html" class="nav-btn pink">🏫 مدرستي</a>
-        </div>
+            <a href="school.html" class="nav-btn pink">🏫 مدرستي</a>
+        </nav>
 
-        <div style="font-size: 20px; margin-top: 25px; text-align: right;">
-            <p>
-                ⭐ <b>محمد إبراهيم الزعبي</b>
-                <a href="friend ahievements.html" class="nav-btn blue" style="padding: 5px 12px; font-size: 15px;">
-                    🏅 إنجازاته
+        <section class="friends-list">
+            <div class="friend-card">
+                <h3>⭐ محمد إبراهيم الزعبي</h3>
+                <a href="friend ahievements.html" class="small-btn">
+                    🏅 عرض الإنجازات
                 </a>
-            </p>
-        </div>
-      <footer>
-            <small>© 2025 تيام الزعبي</small>
-      </footer>
-    </div>
+            </div>
+        </section>
 
+        <footer>
+            <small>© <span id="year"></span> جميع الحقوق محفوظة</small>
+        </footer>
+
+    </main>
 </div>
+
+<script src="friends.js"></script>
 </body>
 </html>
