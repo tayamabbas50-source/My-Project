@@ -1,49 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>إنجازات صديقي</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنجازات صديقي | تيام الزعبي</title>
     <link rel="stylesheet" href="achievements.css">
 </head>
+
 <body>
 
 <div class="layout">
 
-    <div class="side-image"></div>
+    <aside class="side-image"></aside>
 
-    <div class="content">
+    <main class="content hidden">
 
-        <h1>🏆 إنجازات صديقي</h1>
+        <h1 class="title">🏆 إنجازات صديقي</h1>
 
-        <div class="nav-bar">
+        <nav class="nav-bar">
             <a href="index.html" class="nav-btn green">🏠 الرئيسية</a>
             <a href="friends.html" class="nav-btn blue">👥 أصدقائي</a>
-            <a href="School.html" class="nav-btn pink">🏫 مدرستي</a>
-        </div>
+            <a href="school.html" class="nav-btn pink">🏫 مدرستي</a>
+        </nav>
 
-        <table>
-            <caption>📋 أبرز إنجازاته</caption>
+        <section class="achievements">
+<div class="card">
+                <h3>🥈 المركز الثاني - على مستوى المملكة</h3>
+                <p>
+                    الفوز بالمركز الثاني في مسابقة الحديث النبوي الشريف
+                    على مستوى المملكة
+                </p>
+                <a href="https://web.facebook.com/share/p/1Hyd3trmnG/"
+                   target="_blank" class="proof-btn">
+                   🔗 عرض الإثبات
+                </a>
+            </div>
+            <div class="card">
+                <h3>🎯 المركز الأول - لواء بني كنانة</h3>
+                <p>
+                    الفوز بالمركز الأول على مستوى لواء بني كنانة
+                    بمسابقة الحديث النبوي الشريف
+                </p>
+                <a href="https://web.facebook.com/share/p/1Mg6GUPNCS/"
+                   target="_blank" class="proof-btn">
+                   🔗 عرض الإثبات
+                </a>
+            </div>
 
-            <tr>
-                <td>
-                    🎯 الفوز بالمركز الأول على مستوى لواء بني كنانة بمسابقة الحديث النبوي الشريف
-                    <a href="https://web.facebook.com/share/p/1Mg6GUPNCS/" target="_blank"><b>🔗 إثبات</b></a>
-                </td>
-            </tr>
+            <div class="card">
+                <h3>🏅 المركز الأول - القرآن الكريم</h3>
+                <p>
+                    الفوز بالمركز الأول في مسابقة القرآن الكريم
+                    على مستوى المدرسة
+                </p>
+                <a href="https://web.facebook.com/share/p/1HGmWFtoLf/"
+                   target="_blank" class="proof-btn">
+                   🔗 عرض الإثبات
+                </a>
+            </div>
 
-            <tr>
-                <td>
-                    🏅 الفوز بالمركز الأول بمسابقة القرآن الكريم على مستوى المدرسة
-                    <a href="https://web.facebook.com/share/p/1HGmWFtoLf/" target="_blank"><b>🔗 إثبات</b></a>
-                </td>
-            </tr>
-
-        </table>
+        </section>
 
         <footer>
-            <small>© 2025 تيام الزعبي</small>
+            <small>© <span id="year"></span> جميع الحقوق محفوظة</small>
         </footer>
 
-    </div>
-
+    </main>
 </div>
+
+<script src="achievements.js"></script>
 </body>
 </html>
